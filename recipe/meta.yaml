@@ -1,6 +1,6 @@
 {% set name = "Orange3-Text" %}
-{% set version = "0.2.3" %}
-{% set sha256 = "bb487f1dada8c5b0da3b892506927f1825bd0e196af2969be24238274af4074d" %}
+{% set version = "0.2.4" %}
+{% set sha256 = "7b71547d65d592a54ccd551ffdae20065dcafabcc2a84014321b33c27b69872d" %}
 
 package:
   name: {{ name|lower }}
