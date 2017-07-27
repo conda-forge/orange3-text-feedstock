@@ -44,6 +44,9 @@ requirements:
 
 
 test:
+  commands:
+    # make sure all required dependencies are present
+    - python -c "import pkg_resources; pkg_resources.require('Orange3-Text')"
   imports:
     - orangecontrib.text
 
