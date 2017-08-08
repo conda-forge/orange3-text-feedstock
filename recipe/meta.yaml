@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -37,6 +37,11 @@ requirements:
     - wikipedia
     - pyqt            4.11.*
     - typing
+    - pdfminer3k      >=1.3.1
+    - odfpy           >=1.3.5
+    - docx2txt        >=0.6
+    - lxml
+
 
 test:
   imports:
