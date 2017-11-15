@@ -28,6 +28,7 @@ requirements:
     - scikit-learn
     - numpy
     - gensim          >=0.12.3
+    - setuptools-git
     - orange3         >=3.4.3
     - anyqt
     - beautifulsoup4
