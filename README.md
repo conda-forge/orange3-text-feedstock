@@ -7,12 +7,12 @@ Package license: AGPLv3
 
 Feedstock license: BSD 3-Clause
 
-Summary: Orange3 addon for analysing textual data.
+Summary: Orange3 add-on for analyzing textual data.
 
 Orange add-on for text mining. It provides access to publicly available
 data, like NY Times, Twitter and PubMed. Further, it provides tools for
 preprocessing, constructing vector spaces (like bag-of-words and topic
-modeling) and visualizations like word cloud end geo map. All features
+modeling) and visualizations like word cloud and geo map. All features
 can be combined with powerful data mining techniques from the Orange
 data mining framework.
 
@@ -72,6 +72,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
