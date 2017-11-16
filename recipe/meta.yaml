@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: True  # [py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -29,19 +29,20 @@ requirements:
     - numpy
     - gensim          >=0.12.3
     - setuptools-git
-    - orange3         >=3.3.9
+    - orange3         >=3.4.3
+    - anyqt
     - beautifulsoup4
     - validate_email
     - tweepy
     - simhash
     - wikipedia
-    - pyqt            4.11.*
     - typing
     - pdfminer3k      >=1.3.1
     - odfpy           >=1.3.5
     - docx2txt        >=0.6
     - lxml
-
+    # Indirect dep; pinned to work
+    - py              >=1.4.34
 
 test:
   commands:
@@ -55,13 +56,13 @@ about:
   license: AGPLv3
   license_family: AGPL
   license_file: LICENSE
-  summary: 'Orange3 addon for analysing textual data.'
+  summary: 'Orange3 add-on for analyzing textual data.'
 
   description: |
     Orange add-on for text mining. It provides access to publicly available
     data, like NY Times, Twitter and PubMed. Further, it provides tools for
     preprocessing, constructing vector spaces (like bag-of-words and topic
-    modeling) and visualizations like word cloud end geo map. All features
+    modeling) and visualizations like word cloud and geo map. All features
     can be combined with powerful data mining techniques from the Orange
     data mining framework.
 
@@ -71,3 +72,5 @@ about:
 extra:
   recipe-maintainers:
     - nikicc
+    - kernc
+    - astaric
