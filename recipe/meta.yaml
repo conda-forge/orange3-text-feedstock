@@ -42,6 +42,7 @@ requirements:
     - docx2txt        >=0.6
     - lxml
     - ufal.udpipe
+    - ufal.udpipe-temp    
     # Indirect dep; pinned to work
     - py              >=1.4.34
 
