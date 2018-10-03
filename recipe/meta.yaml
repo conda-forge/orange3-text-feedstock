@@ -1,6 +1,6 @@
 {% set name = "Orange3-Text" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "b30a21968a5cf53a6576bf5acbabb09e4f586562ac5bbc8d32a5cc176a468079" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "4f0b27769b0c2a4bfe8eb2a2f1ec9c2b4298a698d31e4457cfb80bf5c12ff481" %}
 
 package:
   name: {{ name|lower }}
@@ -42,6 +42,7 @@ requirements:
     - docx2txt        >=0.6
     - lxml
     - ufal.udpipe
+    - ufal.udpipe-temp
     # Indirect dep; pinned to work
     - py              >=1.4.34
 
