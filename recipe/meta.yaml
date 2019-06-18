@@ -1,6 +1,6 @@
 {% set name = "Orange3-Text" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "b59d9f1c6bde6f8f87b98daaf26c62377ba02885ffa31911ac9e8b40a37f3e22" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "2ebf96d28c9773f07044cac4367bc9fc35b299694cbdd3a74b7f2bc71dee1891" %}
 
 package:
   name: {{ name|lower }}
@@ -45,6 +45,7 @@ requirements:
     - ufal.udpipe-temp
     # Indirect dep; pinned to work
     - py              >=1.4.34
+    - google-compute-engine   # [not win]
 
 test:
   commands:
