@@ -45,6 +45,7 @@ requirements:
     - ufal.udpipe-temp
     # Indirect dep; pinned to work
     - py              >=1.4.34
+    - google-compute-engine
 
 test:
   commands:
