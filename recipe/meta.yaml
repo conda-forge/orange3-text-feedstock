@@ -1,6 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "0.7.1" %}
-{% set sha256 = "2ebf96d28c9773f07044cac4367bc9fc35b299694cbdd3a74b7f2bc71dee1891" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -9,19 +8,20 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 8dcb88777114e2a684140e27e180f412decbe45f8a97f98a75f24d5542defd8b
 
 build:
   number: 0
-  skip: True  # [py2k]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python          >=3.6
     - setuptools
+    - pip
   run:
-    - python
+    - python          >=3.6
     - biopython
     - scipy
     - nltk            >=3.0.5
@@ -45,7 +45,6 @@ requirements:
     - ufal.udpipe-temp
     # Indirect dep; pinned to work
     - py              >=1.4.34
-    - google-compute-engine   # [not win]
 
 test:
   commands:
