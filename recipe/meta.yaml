@@ -32,7 +32,6 @@ requirements:
     - orange3         >=3.4.3
     - anyqt
     - beautifulsoup4
-    - validate_email
     - tweepy
     - simhash
     - wikipedia
