@@ -124,7 +124,6 @@ Feedstock Maintainers
 
 * [@ajdapretnar](https://github.com/ajdapretnar/)
 * [@astaric](https://github.com/astaric/)
-* [@kernc](https://github.com/kernc/)
 * [@nikicc](https://github.com/nikicc/)
 * [@primozgodec](https://github.com/primozgodec/)
 
