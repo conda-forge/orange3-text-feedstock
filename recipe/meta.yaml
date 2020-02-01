@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "0.7.5" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1de5d3371a47b56f37ca34e287ca3a4255af066607515be717b4ede67edb6b15
+  sha256: 439a62d9836e3518fd382b1f6a0c68bc6f069b1d8d4a32dd9648a6040278ef9e
 
 build:
   number: 0
@@ -40,7 +40,7 @@ requirements:
     - docx2txt >=0.6
     - lxml
     - biopython
-    - ufal.udpipe-temp >=1.2.0.5
+    - ufal.udpipe >=1.2.0.3
 
 test:
   commands:
