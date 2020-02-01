@@ -40,7 +40,7 @@ requirements:
     - docx2txt >=0.6
     - lxml
     - biopython
-    - ufal.udpipe-temp >=1.2.0.5
+    - ufal.udpipe >=1.2.0.3
 
 test:
   commands:
