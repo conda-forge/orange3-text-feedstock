@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 439a62d9836e3518fd382b1f6a0c68bc6f069b1d8d4a32dd9648a6040278ef9e
+  sha256: 4ab75b5483b99150cf65874422647bc6beb6c1bf70cfa1554340a6520385aa6b
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -54,7 +54,7 @@ about:
   license: AGPLv3
   license_family: AGPL
   license_file: LICENSE
-  summary: 'Orange3 add-on for analyzing textual data.'
+  summary: Orange3 add-on for analyzing textual data.
 
   description: |
     Orange add-on for text mining. It provides access to publicly available
