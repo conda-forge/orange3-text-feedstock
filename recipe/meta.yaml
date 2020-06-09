@@ -25,8 +25,8 @@ requirements:
     - nltk >=3.0.5,<3.5
     - scikit-learn
     - numpy
-    - docutils <0.16
-    - python-dateutil <2.8.1
+    - docutils  # skip version since version in requirements.txt just because of pip
+    - python-dateutil  # skip version since version in requirements.txt just because of pip
     - gensim >=0.12.3
     - setuptools-git
     - orange3 >=3.25.0
