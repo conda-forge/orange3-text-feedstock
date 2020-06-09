@@ -11,7 +11,7 @@ source:
   sha256: 8ad7ff86cfca5e3d5f33599c86d0ad0b6187ccf8946fedf7d8f68784e3683140
 
 build:
-  number: 0
+  number: 10
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,8 +25,8 @@ requirements:
     - nltk >=3.0.5,<3.5
     - scikit-learn
     - numpy
-    - docutils <0.16
-    - python-dateutil <2.8.1
+    # do not list docutils, python-dateutils - those packages are listed in requirements.txt 
+    # because of pip issue, pip do not downgrade them correctly - for conda it should be ok
     - gensim >=0.12.3
     - setuptools-git
     - orange3 >=3.25.0
