@@ -26,7 +26,7 @@ requirements:
     - scikit-learn
     - numpy
     - docutils <0.16
-    - python-dateutil <2.8.1
+    - python-dateutil <3.0.0
     - gensim >=0.12.3
     - setuptools-git
     - orange3 >=3.25.0
@@ -40,6 +40,7 @@ requirements:
     - lxml
     - biopython
     - ufal.udpipe >=1.2.0.3
+    - ply
 
 test:
   commands:
