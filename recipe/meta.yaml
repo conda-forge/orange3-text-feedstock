@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "0.9.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ad7ff86cfca5e3d5f33599c86d0ad0b6187ccf8946fedf7d8f68784e3683140
+  sha256: 49907b17f5cd98dcc401ec2928712b5fcf6b2c47d5b7ff83de7ee97244de5426
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - scikit-learn
     - numpy
     - docutils <0.16
-    - python-dateutil <2.8.1
+    - python-dateutil <3.0.0
     - gensim >=0.12.3
     - setuptools-git
     - orange3 >=3.25.0
@@ -40,6 +40,7 @@ requirements:
     - lxml
     - biopython
     - ufal.udpipe >=1.2.0.3
+    - ply
 
 test:
   commands:
