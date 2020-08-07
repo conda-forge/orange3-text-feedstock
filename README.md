@@ -5,7 +5,7 @@ Home: https://github.com/biolab/orange3-text
 
 Package license: AGPLv3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Orange3 add-on for analyzing textual data.
 
