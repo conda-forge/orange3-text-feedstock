@@ -25,14 +25,13 @@ requirements:
     - nltk >=3.0.5,<3.5
     - scikit-learn
     - numpy
-    - docutils <0.16
     - python-dateutil <3.0.0
     - gensim >=0.12.3
     - setuptools-git
     - orange3 >=3.25.0
     - tweepy
     - beautifulsoup4
-    - simhash ~=1.9.0
+    - simhash >=1.11.0
     - wikipedia
     - pdfminer3k >=1.3.1
     - odfpy >=1.3.5
@@ -40,7 +39,6 @@ requirements:
     - lxml
     - biopython
     - ufal.udpipe >=1.2.0.3
-    - ply
 
 test:
   commands:
