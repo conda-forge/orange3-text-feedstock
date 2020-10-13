@@ -5,9 +5,13 @@ Home: https://github.com/biolab/orange3-text
 
 Package license: AGPLv3
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-text-feedstock/blob/master/LICENSE.txt)
 
 Summary: Orange3 add-on for analyzing textual data.
+
+Development: https://github.com/biolab/orange3-text
+
+Documentation: http://orange3-text.readthedocs.io
 
 Orange add-on for text mining. It provides access to publicly available
 data, like NY Times, Twitter and PubMed. Further, it provides tools for
