@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://github.com/biolab/orange3-text
-  license: AGPLv3
+  license: 	AGPL-3.0-only
   license_family: AGPL
   license_file: LICENSE
   summary: Orange3 add-on for analyzing textual data.
