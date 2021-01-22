@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - scipy
-    - nltk >=3.0.5,<3.5
+    - nltk >=3.0.5
     - scikit-learn
     - numpy
     - python-dateutil <3.0.0
