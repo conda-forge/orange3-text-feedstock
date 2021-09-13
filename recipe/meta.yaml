@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c5004a709b9cdecd63a34059bcfd14357769553179eeeac1f7863c16d032311b
+  sha256: d260dacc174cf71f89784b1560cbef6a36c5e115cf45d349ea9494d582a8b50b
 
 build:
   number: 0
@@ -41,6 +41,8 @@ requirements:
     - ufal.udpipe >=1.2.0.3
     - orange-widget-base >=4.12.0
     - yake
+    - conllu
+    - lemmagen3
 
 test:
   commands:
@@ -51,7 +53,7 @@ test:
 
 about:
   home: https://github.com/biolab/orange3-text
-  license: AGPLv3
+  license: AGPL-3.0-only
   license_family: AGPL
   license_file: LICENSE
   summary: Orange3 add-on for analyzing textual data.
