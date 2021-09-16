@@ -3,7 +3,7 @@ About orange3-text
 
 Home: https://github.com/biolab/orange3-text
 
-Package license: AGPLv3
+Package license: AGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-text-feedstock/blob/master/LICENSE.txt)
 
