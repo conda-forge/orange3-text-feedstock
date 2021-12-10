@@ -11,9 +11,17 @@ source:
   sha256: 4342b7b2637cf6dafb441bd7873ca7dadfdd2790bd7becdc8b259aa7d1b4e66c
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: 
+    # conda is not happy with special characters
+    # error appears on some machines wich cannot handle special characters when validating package
+    # since manifest includes special characters and system cannot find them
+    # https://github.com/gem/oq-engine/issues/6347
+    # removing them since they are used only for testing
+    - rm -f orangecontrib/text/widgets/tests/data/good/sample_txt_ž.txt
+    - rm -f orangecontrib/text/widgets/tests/data/documents/good/sample_txt_ž.txt
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
