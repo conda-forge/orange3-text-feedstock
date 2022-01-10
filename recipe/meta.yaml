@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4342b7b2637cf6dafb441bd7873ca7dadfdd2790bd7becdc8b259aa7d1b4e66c
+  sha256: 20f9e42af72bbeebac21cf1f7a7f43d90c9473908b5251de3f006baaa466fc17
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: 
+  script:
     # conda is not happy with special characters
     # error appears on some machines wich cannot handle special characters when validating package
     # since manifest includes special characters and system cannot find them
