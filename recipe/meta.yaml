@@ -25,16 +25,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - anyqt
     - beautifulsoup4
     - biopython
     - conllu
     - docx2txt >=0.6
     - gensim >=4.1.2
+    - httpx
     - lemmagen3
     - lxml
     - nltk >=3.0.5
