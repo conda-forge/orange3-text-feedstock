@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "1.6.2" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 20f9e42af72bbeebac21cf1f7a7f43d90c9473908b5251de3f006baaa466fc17
+  sha256: 4bb41cf61b9c5ca95146510693eb2970d338c8d194ba1a30189dbefd9e4ec72b
 
 build:
   number: 0
@@ -25,16 +25,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - anyqt
     - beautifulsoup4
     - biopython
     - conllu
     - docx2txt >=0.6
     - gensim >=4.1.2
+    - httpx
     - lemmagen3
     - lxml
     - nltk >=3.0.5
