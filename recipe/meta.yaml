@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9394d00a29aafb44ad64c31fa30d00a354944356fd65c7bf7726d8ec17e4c881
+  sha256: 105d2a4a8bfc1938ad4e56922d5b60d9b0100ebc12d5f1008dd71c000f559971
 
 build:
   number: 0
@@ -34,7 +34,7 @@ requirements:
     - biopython
     - conllu
     - docx2txt >=0.6
-    - gensim >=4.2.0
+    - gensim ==4.1.2
     - httpx
     - lemmagen3
     - lxml
