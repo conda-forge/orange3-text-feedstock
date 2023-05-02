@@ -68,6 +68,10 @@ test:
     - python -c "import pkg_resources; pkg_resources.require('Orange3-Text')"
   imports:
     - orangecontrib.text
+  requires:
+    # temporary adding since it was by accident added to Gensim=4.3.0 requirements
+    # it can be removed when Orange3-text depends on newer version
+    - fuzzytm
 
 about:
   home: https://github.com/biolab/orange3-text
