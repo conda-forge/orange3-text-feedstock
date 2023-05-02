@@ -156,7 +156,5 @@ Feedstock Maintainers
 =====================
 
 * [@ajdapretnar](https://github.com/ajdapretnar/)
-* [@astaric](https://github.com/astaric/)
-* [@nikicc](https://github.com/nikicc/)
 * [@primozgodec](https://github.com/primozgodec/)
 
