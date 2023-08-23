@@ -1,5 +1,5 @@
 {% set name = "Orange3-Text" %}
-{% set version = "1.13.1" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e7f6218e5cf0e49ce9c58ebf90d7e3d65f455f4f3bca864c0b904de76c603f2
+  sha256: a60fbf0e148467b64782ffe9f3713961d0a3006a18d6860164110baf7b8261a5
 
 build:
   number: 0
@@ -47,7 +47,6 @@ requirements:
     - owlready2
     - pandas
     - pdfminer3k >=1.3.1
-    - pyclipper >=1.2.0
     - pyqtgraph
     - pyyaml
     - requests
@@ -55,9 +54,11 @@ requirements:
     - scipy
     - serverfiles
     - simhash >=1.11.0
+    - shapely >=2.0
     - six
     - tweepy >=4.0.0
     - ufal.udpipe >=1.2.0.3
+    - trimesh >=3.9.8
     - wikipedia
     - yake
 
