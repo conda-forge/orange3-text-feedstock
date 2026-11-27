@@ -66,13 +66,13 @@ requirements:
 
 test:
   commands:
-    # make sure all required dependencies are present
-    - python -c "import pkg_resources; pkg_resources.require('Orange3-Text')"
+    # Make sure all required dependencies are present and compatible
+    - python -m pip check
   imports:
     - orangecontrib.text
   requires:
     - python {{ python_min }}
-    - pkg_resources
+    - pip
     - pyqt
 
 about:
