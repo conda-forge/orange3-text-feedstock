@@ -72,6 +72,7 @@ test:
     - orangecontrib.text
   requires:
     - python {{ python_min }}
+    - pyqt
 
 about:
   home: https://github.com/biolab/orange3-text
